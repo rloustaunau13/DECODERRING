@@ -23,6 +23,12 @@ describe('polybius() submission tests written by RL', function () {
   });
 
 
+  it('should decrypt message', function () {
+    const encodedMessage = polybius("message", true);
+    // Check if the encoded message matches the expected result
+    expect(encodedMessage).to.equal("23513434112251");
+  });
+
 
 
 });
